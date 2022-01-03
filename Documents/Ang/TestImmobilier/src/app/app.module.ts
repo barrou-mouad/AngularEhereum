@@ -4,16 +4,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GetCountComponent } from './get-count/get-count.component';
+import { FormsModule } from '@angular/forms';
+import { CountComponent } from './count/count.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetCountComponent
+    GetCountComponent,
+    CountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

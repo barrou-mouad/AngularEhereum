@@ -1,1 +1,17 @@
 <button (click)="testAuth()">OK</button>
+
+<form #form="ngForm" class="container">
+  <Label >Id</Label>
+  <input class="form-control" [(ngModel)]="data.id"  type="text" name="id" >
+  <Label >Cout</Label>
+  <input class="form-control" [(ngModel)]="data.cout" type="text" name="cout" >
+  <button (click)="send(form)"  class="btn btn-primary my-4 d-block">Sauvegarder</button>
+</form>
+<ul>
+  <li *ngFor="let personne of contracts; let i=index">
+      {{personne.id}} {{personne.owner}}  {{personne.cout}}
+  </li>
+</ul>
+
+
+
